@@ -37,7 +37,7 @@ namespace OnSale.Common.Entities
         //TODO: Pending to put the correct paths
         [Display(Name = "Image")]
         public string ImageFullPath => ProductImages == null || ProductImages.Count == 0
-            ? $"https://localhost:44390/images/NoImageAvailable.png"
+            ? $"https://localhost:44366/images/NoImageAvailable.png"
             : ProductImages.FirstOrDefault().ImageFullPath;
     }
 
