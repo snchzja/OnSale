@@ -21,6 +21,8 @@ namespace OnSale.Web.Helpers
         Task<bool> IsUserInRoleAsync(User user, string roleName);
 
         Task<SignInResult> LoginAsync(LoginViewModel model);
+        Task<SignInResult> ValidatePasswordAsync(User user, string password);
+
 
         Task LogoutAsync();
 
