@@ -31,7 +31,7 @@ namespace OnSale.Web.Data.Entities
         [Display(Name = "Image")]
         public Guid ImageId { get; set; }
 
-        //TODO: Pending to put the correct paths
+        //TODO arreglar la direcion
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
             ? $"https://localhost:44366/images/NoImageAvailable.png"

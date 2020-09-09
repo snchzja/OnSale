@@ -34,7 +34,7 @@ namespace OnSale.Common.Entities
         [DisplayName("Product Images Number")]
         public int ProductImagesNumber => ProductImages == null ? 0 : ProductImages.Count;
 
-        //TODO: Pending to put the correct paths
+        //TODO arreglar la direcion
         [Display(Name = "Image")]
         public string ImageFullPath => ProductImages == null || ProductImages.Count == 0
             ? $"https://localhost:44366/images/NoImageAvailable.png"
