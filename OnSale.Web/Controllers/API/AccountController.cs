@@ -74,7 +74,7 @@ namespace OnSale.Web.Controllers.API
 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
-        [Route("GetUserByEmail")]
+        //[Route("GetUserByEmail")]
         public async Task<IActionResult> GetUserByEmail([FromBody] EmailRequest request)
         {
             if (!ModelState.IsValid)
